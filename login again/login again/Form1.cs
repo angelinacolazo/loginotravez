@@ -37,6 +37,10 @@ namespace login_again
             if(txtusuario.Text=="juancho"&&txtcontraseña.Text=="123tamarindo")
             {
                 MessageBox.Show("bienvenido sr don juancho");
+                this.Hide();//escogemos ventanalogin
+                ventana2 cursosventana = new ventana2();
+                cursosventana.Show();
+                this.Visible = false;
             }
             else
             {
