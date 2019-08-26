@@ -51,5 +51,22 @@ namespace login_again
 
             }
         }
+
+        private void Txtcontraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtcontraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if((int)e.KeyChar==(int)Keys.Enter)
+            {
+                if(txtusuario.Text=="juancho"&& txtcontraseña.Text=="123tamarindo")
+                {
+
+                }
+                    
+            }
+        }
     }
 }
