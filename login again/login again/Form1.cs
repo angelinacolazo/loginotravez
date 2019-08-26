@@ -16,5 +16,36 @@ namespace login_again
         {
             InitializeComponent();
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();//para calir
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if(txtusuario.Text=="juancho"&&txtcontraseña.Text=="123tamarindo")
+            {
+                MessageBox.Show("bienvenido sr don juancho");
+            }
+            else
+            {
+                MessageBox.Show(" usuario o contraseña no valido ");
+                txtusuario.Text = " ";
+                txtcontraseña.Text = "";
+                txtusuario.Focus();
+
+            }
+        }
     }
 }
